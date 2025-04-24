@@ -1,0 +1,4 @@
+
+Çökme nedeni: list index out of range  ---------    26-01-2024 12:39:31
+
+Çökme nedeni: name 'aa' is not defined  ---------    28-01-2024 17:30:15

@@ -1,252 +1,47 @@
-2024-04-23 19:22:15,304 - INFO - ---------------------------------------------------------
-2024-04-23 19:22:15,305 - INFO - Program baþladý
-2024-04-23 19:22:15,308 - INFO - Giriþ ekraný açýldý.
-2024-04-23 19:22:15,903 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-23 19:22:15,904 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-23 19:22:23,214 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-23 19:22:23,214 - INFO - Ana menü görüntülendi.
-2024-04-23 19:22:30,600 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:22:35,453 - INFO - Fatura kaydedildi. | 01.01.2023 | AMAZON | 1445.0 | 
-2024-04-23 19:22:37,122 - INFO - Ana menü görüntülendi.
-2024-04-23 19:22:41,184 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:22:50,570 - INFO - Fatura kaydedildi. | 07.07.2023 | N11 | 662.0 | koli
-2024-04-23 19:22:53,894 - INFO - Fatura kayýt tekrar istendi.
-2024-04-23 19:22:53,894 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:23:05,827 - INFO - Fatura kaydedildi. | 07.07.2023 | N11 | 412.0 | koli
-2024-04-23 19:23:13,465 - INFO - Fatura kayýt tekrar istendi.
-2024-04-23 19:23:13,465 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:23:20,163 - INFO - Fatura kaydedildi. | 07.07.2023 | N11 | 442.0 | yumurta
-2024-04-23 19:23:26,827 - INFO - Fatura kayýt tekrar istendi.
-2024-04-23 19:23:26,827 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:23:41,232 - INFO - Sistemde var olan faturalar gösterildi. TEYÝT ÝSTENDÝ.
-2024-04-23 19:24:05,461 - INFO - Teyit Gerçekleþti. Fatura kayýt'a onay verildi.
-2024-04-23 19:24:05,481 - INFO - Fatura kaydedildi. | 07.07.2023 | N11 | 442.0 | abc koli
-2024-04-23 19:24:09,338 - INFO - Ana menü görüntülendi.
-2024-04-23 19:24:15,240 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-23 19:24:16,050 - INFO - Fatura Ödeme uygulamasýnda '' aramasý yapýldý.
-2024-04-23 19:24:16,223 - INFO - Faturalar görüntülendi.
-2024-04-23 19:24:16,223 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:16,224 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:16,225 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:16,226 - INFO - 4- {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:16,229 - INFO - 5- {'id': 5, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:16,257 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:24:18,271 - INFO - Sorgu seçimi: 0
-2024-04-23 19:24:30,973 - INFO - Ödenmemiþ fatura Teyit ekranýna sunuldu. 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:37,914 - INFO - Ödeme tipi 'Nakit'
-2024-04-23 19:24:37,915 - INFO - Teyit Onaylandý.
-2024-04-23 19:24:37,915 - INFO - Ödemesi Gerçekleþen Fatura: {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:24:44,298 - INFO - Ödeme iþlemi Tamamlandý.
-2024-04-23 19:24:47,206 - INFO - Ana menü görüntülendi.
-2024-04-23 19:24:51,246 - INFO - Fatura Silme uygulamasý açýldý.
-2024-04-23 19:24:56,327 - INFO - Fatura silme için 'N1' aramasý yapýldý.
-2024-04-23 19:24:56,328 - INFO - Fatura Silme için faturalar listelendi.
-2024-04-23 19:24:56,486 - INFO - 1- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:56,487 - INFO - 2- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:24:56,488 - INFO - 3- {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:56,489 - INFO - 4- {'id': 5, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:24:56,493 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:25:07,525 - INFO - Sorgu seçimi: 2
-2024-04-23 19:25:10,653 - INFO - Tutar aralýðý girildi. 0 | 500.0
-2024-04-23 19:25:10,810 - INFO - Faturalar tutar aralýðýna göre listelendi.
-2024-04-23 19:25:10,811 - INFO - Faturalar listelendi. 
-[33mFatura Tutar Aralýðýna[37m Göre Arama Sonuçlarý:
-2024-04-23 19:25:10,811 - INFO - 1 - {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:25:10,813 - INFO - 2 - {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:25:10,814 - INFO - 3 - {'id': 5, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:25:22,730 - INFO - Seçilen Fatura: 2 - {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:25:22,733 - INFO - Seçilen Fatura: 3 - {'id': 5, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:25:49,521 - INFO - Seçilen faturalar silindi.
-2024-04-23 19:25:53,716 - INFO - Silme iþlemi Tamamlandý.
-2024-04-23 19:27:36,988 - INFO - ---------------------------------------------------------
-2024-04-23 19:27:36,988 - INFO - Program baþladý
-2024-04-23 19:27:36,998 - INFO - Giriþ ekraný açýldý.
-2024-04-23 19:27:37,648 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-23 19:27:37,648 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-23 19:27:45,730 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-23 19:27:45,730 - INFO - Ana menü görüntülendi.
-2024-04-23 19:27:48,849 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:28:01,572 - INFO - Sistemde var olan faturalar gösterildi. TEYÝT ÝSTENDÝ.
-2024-04-23 19:28:04,275 - INFO - Teyit Gerçekleþti. Fatura kayýt'a onay verildi.
-2024-04-23 19:28:04,284 - INFO - Fatura kaydedildi. | 07.07.2023 | N11 | 442.0 | abc koli
-2024-04-23 19:28:06,217 - INFO - Ana menü görüntülendi.
-2024-04-23 19:28:09,606 - INFO - Fatura Silme uygulamasý açýldý.
-2024-04-23 19:28:14,363 - INFO - Fatura silme için '' aramasý yapýldý.
-2024-04-23 19:28:14,363 - INFO - Fatura Silme için faturalar listelendi.
-2024-04-23 19:28:14,534 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:14,535 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:14,536 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:28:14,537 - INFO - 4- {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:14,540 - INFO - 5- {'id': 6, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:14,543 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:28:17,266 - INFO - Sorgu seçimi: 0
-2024-04-23 19:28:23,521 - INFO - Seçilen indeksler: 4-5
-2024-04-23 19:28:28,832 - INFO - Seçilen Fatura: 4 - {'id': 4, 'fatura_token': 'N11-07.07.2023-442.0-yumurta', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'yumurta', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:28,833 - INFO - Seçilen Fatura: 5 - {'id': 6, 'fatura_token': 'N11-07.07.2023-442.0-abc koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'abc koli', 'Fatura_tutar': 442.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:28:49,214 - INFO - Seçilen faturalar silindi.
-2024-04-23 19:28:53,401 - INFO - Silme iþlemi Tamamlandý.
-2024-04-23 19:28:57,077 - INFO - Ana menü görüntülendi.
-2024-04-23 19:29:00,092 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:29:04,739 - INFO - Fatura kaydedildi. | 02.02.2023 | AMAZON | 44.0 | 
-2024-04-23 19:29:06,077 - INFO - Ana menü görüntülendi.
-2024-04-23 19:29:09,496 - INFO - Hatalý iþlem seçeneði seçildi.
-2024-04-23 19:29:10,498 - INFO - Ana menü görüntülendi.
-2024-04-23 19:29:14,789 - INFO - Fatura kaydetme açýldý.
-2024-04-23 19:29:18,654 - INFO - Fatura kaydedildi. | 01.01.2023 | AMAZON | 7.0 | 
-2024-04-23 19:29:20,350 - INFO - Ana menü görüntülendi.
-2024-04-23 19:29:23,519 - INFO - Fatura Silme uygulamasý açýldý.
-2024-04-23 19:29:25,314 - INFO - Fatura silme için 'AMAZ' aramasý yapýldý.
-2024-04-23 19:29:25,315 - INFO - Fatura Silme için faturalar listelendi.
-2024-04-23 19:29:25,491 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:25,492 - INFO - 2- {'id': 7, 'fatura_token': 'AMAZON-02.02.2023-44.0-', 'fatura': {'Tarih': '02.02.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 44.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:25,493 - INFO - 3- {'id': 8, 'fatura_token': 'AMAZON-01.01.2023-7.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 7.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:25,494 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:29:29,455 - INFO - Sorgu seçimi: 0
-2024-04-23 19:29:31,166 - INFO - Seçilen indeksler: 2-3
-2024-04-23 19:29:36,486 - INFO - Seçilen Fatura: 2 - {'id': 7, 'fatura_token': 'AMAZON-02.02.2023-44.0-', 'fatura': {'Tarih': '02.02.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 44.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:36,490 - INFO - Seçilen Fatura: 3 - {'id': 8, 'fatura_token': 'AMAZON-01.01.2023-7.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 7.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:47,916 - INFO - Seçilen faturalar silindi.
-2024-04-23 19:29:52,108 - INFO - Silme iþlemi Tamamlandý.
-2024-04-23 19:29:53,823 - INFO - Ana menü görüntülendi.
-2024-04-23 19:29:57,545 - INFO - Fatura bulma açýldý.
-2024-04-23 19:29:57,706 - INFO - Fatura Bulma için '' aramasý yapýldý.
-2024-04-23 19:29:57,867 - INFO - Fatura bulma için faturalar listelendi
-2024-04-23 19:29:57,868 - INFO - 1 - {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:57,869 - INFO - 2 - {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:29:57,870 - INFO - 3 - {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:29:57,871 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:30:00,033 - INFO - Sorgu seçimi: 4
-2024-04-23 19:34:01,964 - INFO - ---------------------------------------------------------
-2024-04-23 19:34:01,965 - INFO - Program baþladý
-2024-04-23 19:34:01,975 - INFO - Giriþ ekraný açýldý.
-2024-04-23 19:34:02,356 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-23 19:34:02,356 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-23 19:34:08,161 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-23 19:34:08,162 - INFO - Ana menü görüntülendi.
-2024-04-23 19:34:12,693 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-23 19:34:12,728 - INFO - Fatura Ödeme uygulamasýnda '' aramasý yapýldý.
-2024-04-23 19:34:12,892 - INFO - Faturalar görüntülendi.
-2024-04-23 19:34:12,892 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:34:12,893 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:34:12,894 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:34:12,902 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:34:21,743 - INFO - Sorgu seçimi: 0
-2024-04-23 19:34:23,555 - INFO - Ödenmemiþ fatura Teyit ekranýna sunuldu. 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:34:36,265 - INFO - Ödeme tipi 'Kart' Sonu 1156| Garanti
-2024-04-23 19:34:36,266 - INFO - Teyit Onaylandý.
-2024-04-23 19:34:36,266 - INFO - Ödemesi Gerçekleþen Fatura: {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1156 \x1b[37m|\x1b[33m Garanti\x1b[37m  [23.04.2024]   19:34:36'}}
-2024-04-23 19:34:42,635 - INFO - Ödeme iþlemi Tamamlandý.
-2024-04-23 19:34:46,053 - INFO - Ana menü görüntülendi.
-2024-04-23 19:34:50,458 - INFO - Fatura bulma açýldý.
-2024-04-23 19:34:52,494 - INFO - Fatura Bulma için 'AMAZ' aramasý yapýldý.
-2024-04-23 19:34:52,653 - INFO - Fatura bulma için faturalar listelendi
-2024-04-23 19:34:52,653 - INFO - 1 - {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:34:52,654 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:34:58,338 - INFO - Sorgu seçimi: 0
-2024-04-23 19:35:00,004 - INFO - Ana menü görüntülendi.
-2024-04-23 19:35:04,245 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-23 19:35:05,268 - INFO - Fatura Ödeme uygulamasýnda '' aramasý yapýldý.
-2024-04-23 19:35:05,430 - INFO - Faturalar görüntülendi.
-2024-04-23 19:35:05,431 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 19:35:05,432 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1156 \x1b[37m|\x1b[33m Garanti\x1b[37m  [23.04.2024]   19:34:36'}}
-2024-04-23 19:35:05,433 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 19:35:05,440 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 19:36:01,189 - INFO - Sorgu seçimi: 3
-2024-04-23 19:36:06,981 - INFO - Tarih aralýðý girildi. 01.01.2023 | 04.04.2023
-2024-04-23 19:36:09,409 - INFO - Tutar aralýðý girildi. 0 | 600.0
-2024-04-23 19:36:09,566 - INFO - Seçilen kriterlere ait fatura bulunamadý.
-2024-04-23 21:15:55,602 - INFO - ---------------------------------------------------------
-2024-04-23 21:15:55,602 - INFO - Program baþladý
-2024-04-23 21:15:55,614 - INFO - Giriþ ekraný açýldý.
-2024-04-23 21:15:56,901 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-23 21:15:56,901 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-23 21:16:04,127 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-23 21:16:04,127 - INFO - Ana menü görüntülendi.
-2024-04-23 21:16:06,059 - INFO - Güncelleme bildirildi.
-2024-04-23 21:16:21,932 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-23 21:16:22,231 - INFO - Fatura Ödeme uygulamasýnda '' aramasý yapýldý.
-2024-04-23 21:16:22,397 - INFO - Faturalar görüntülendi.
-2024-04-23 21:16:22,398 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 21:16:22,399 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1156 \x1b[37m|\x1b[33m Garanti\x1b[37m  [23.04.2024]   19:34:36'}}
-2024-04-23 21:16:22,400 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-23 21:16:22,423 - INFO - Sorgu ekraný sunuldu. 
-2024-04-23 21:16:23,716 - INFO - Sorgu seçimi: 0
-2024-04-23 21:16:24,642 - INFO - Ödenmemiþ fatura Teyit ekranýna sunuldu. 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': '\x1b[33mÖdeme Bekliyor\x1b[37m'}}
-2024-04-23 21:16:33,422 - INFO - Ödeme tipi 'Kart' Sonu 5531| Maximum
-2024-04-23 21:16:33,422 - INFO - Teyit Onaylandý.
-2024-04-23 21:16:33,423 - INFO - Ödemesi Gerçekleþen Fatura: {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 5531 \x1b[37m|\x1b[33m Maximum\x1b[37m  [23.04.2024]   21:16:33'}}
-2024-04-23 21:16:39,801 - INFO - Ödeme iþlemi Tamamlandý.
-2024-04-23 21:16:56,792 - INFO - Ana menü görüntülendi.
-2024-04-23 21:17:00,927 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-23 21:17:01,900 - INFO - Fatura Ödeme uygulamasýnda '' aramasý yapýldý.
-2024-04-23 21:17:02,061 - INFO - Faturalar görüntülendi.
-2024-04-23 21:17:02,061 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 5531 \x1b[37m|\x1b[33m Maximum\x1b[37m  [23.04.2024]   21:16:33'}}
-2024-04-23 21:17:02,062 - INFO - 2- {'id': 2, 'fatura_token': 'N11-07.07.2023-662.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 662.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1156 \x1b[37m|\x1b[33m Garanti\x1b[37m  [23.04.2024]   19:34:36'}}
-2024-04-23 21:17:02,064 - INFO - 3- {'id': 3, 'fatura_token': 'N11-07.07.2023-412.0-koli', 'fatura': {'Tarih': '07.07.2023', 'Firma_ismi': 'N11', 'Fatura_icerik': 'koli', 'Fatura_tutar': 412.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [23.04.2024]   19:24:37'}}
-2024-04-25 21:03:44,567 - INFO - ---------------------------------------------------------
-2024-04-25 21:03:44,568 - INFO - Program baþladý
-2024-04-25 21:03:44,580 - INFO - Giriþ ekraný açýldý.
-2024-04-25 21:03:45,999 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-25 21:03:46,000 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-25 21:03:53,412 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-25 21:03:53,412 - INFO - Ana menü görüntülendi.
-2024-04-25 21:04:02,297 - INFO - Fatura Ödeme Uygulamasý açýldý.
-2024-04-25 21:04:03,796 - INFO - Fatura Ödeme uygulamasýnda 'amaz' aramasý yapýldý.
-2024-04-25 21:04:03,967 - INFO - Faturalar görüntülendi.
-2024-04-25 21:04:03,968 - INFO - 1- {'id': 1, 'fatura_token': 'AMAZON-01.01.2023-1445.0-', 'fatura': {'Tarih': '01.01.2023', 'Firma_ismi': 'AMAZON', 'Fatura_icerik': '', 'Fatura_tutar': 1445.0, 'Durum': ' \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 5531 \x1b[37m|\x1b[33m Maximum\x1b[37m  [23.04.2024]   21:16:33'}}
-2024-04-28 13:47:41,692 - INFO - ---------------------------------------------------------
-2024-04-28 13:47:41,694 - INFO - Program baþladý
-2024-04-28 13:47:41,706 - INFO - Giriþ ekraný açýldý.
-2024-04-28 13:47:42,383 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-04-28 13:47:42,383 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-04-28 13:47:49,801 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-04-28 13:47:49,801 - INFO - Ana menü görüntülendi.
-2024-04-28 13:47:53,032 - INFO - Fatura kaydetme açýldý.
-2024-04-28 13:47:58,066 - INFO - Fatura kaydedildi. | 05.05.2023 | BATU | 124.0 | 
-2024-04-28 13:48:00,717 - INFO - Fatura kayýt tekrar istendi.
-2024-04-28 13:48:00,717 - INFO - Fatura kaydetme açýldý.
-2024-04-28 13:48:07,620 - INFO - Fatura kaydedildi. | 08.08.2023 | PELIN | 43.0 | 
-2024-04-28 13:48:07,966 - INFO - Programdan çýkýldý.
-2024-05-03 20:46:44,901 - INFO - ---------------------------------------------------------
-2024-05-03 20:46:44,905 - INFO - Program baþladý
-2024-05-03 20:46:44,917 - INFO - Giriþ ekraný açýldý.
-2024-05-03 20:46:47,200 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
-2024-05-03 20:46:47,200 - INFO - Kimlik dogruma iþlemine geçildi.
-2024-05-03 20:46:53,874 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
-2024-05-03 20:46:53,875 - INFO - Ana menü görüntülendi.
-2024-05-03 20:46:57,294 - INFO - Güncelleme bildirildi.
-2024-05-03 20:47:07,668 - INFO - Fatura Silme uygulamasý açýldý.
-2024-05-03 20:47:08,673 - INFO - Fatura silme için '' aramasý yapýldý.
-2024-05-03 20:47:08,674 - INFO - Fatura Silme için faturalar listelendi.
-2024-05-03 20:47:08,838 - INFO - 1- {'Tarih': '01.05.2023', 'Firma Ýsmi': 'MAXIMUM', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '12.46 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1145\x1b[37m  [22.09.2023]   22:28:02'}
-2024-05-03 20:47:08,842 - INFO - 2- {'Tarih': '05.05.2023', 'Firma Ýsmi': 'IÞ BANKASI', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '5844.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1299\x1b[37m  [21.09.2023]   19:26:54'}
-2024-05-03 20:47:08,842 - INFO - 3- {'Tarih': '09.09.2023', 'Firma Ýsmi': 'AYDER', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '2246.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [03.10.2023]   21:42:34'}
-2024-05-03 20:47:08,843 - INFO - 4- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'HBSC', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '556.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 0751 \x1b[37m|\x1b[33m 0751\x1b[37m  [24.10.2023]   14:53:23'}
-2024-05-03 20:47:08,861 - INFO - 5- {'Tarih': '06.06.2023', 'Firma Ýsmi': 'YAPIKREDI', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '145.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1156 \x1b[37m|\x1b[33m Iþ\x1b[37m  [04.10.2023]   21:10:46'}
-2024-05-03 20:47:08,867 - INFO - 6- {'Tarih': '02.02.2023', 'Firma Ýsmi': 'AKBANK', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '1156.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1554 \x1b[37m|\x1b[33m Ziraat\x1b[37m  [06.10.2023]   14:08:57'}
-2024-05-03 20:47:08,873 - INFO - 7- {'Tarih': '14.12.2024', 'Firma Ýsmi': 'N11', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '5568.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1145 \x1b[37m|\x1b[33m Ziraat\x1b[37m  [10.10.2023]   14:54:05'}
-2024-05-03 20:47:08,877 - INFO - 8- {'Tarih': '01.05.2022', 'Firma Ýsmi': 'AKMEHMET', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '111.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 7756 \x1b[37m|\x1b[33m Iþ\x1b[37m  [16.10.2023]   14:31:38'}
-2024-05-03 20:47:08,897 - INFO - 9- {'Tarih': '12.12.2023', 'Firma Ýsmi': 'BATUHAN TEKNOLOJI', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '1135.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 5578 \x1b[37m|\x1b[33m Ziraat\x1b[37m  [16.10.2023]   19:57:30'}
-2024-05-03 20:47:08,905 - INFO - 10- {'Tarih': '11.11.2023', 'Firma Ýsmi': 'BATUHAN TEKNOLOJI', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '6678.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 9981 \x1b[37m|\x1b[33m Garanti\x1b[37m  [09.12.2023]   17:14:09'}
-2024-05-03 20:47:08,923 - INFO - 11- {'Tarih': '11.11.2023', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '112356.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 4019 \x1b[37m|\x1b[33m Garanti\x1b[37m  [04.12.2023]   14:45:40'}
-2024-05-03 20:47:08,930 - INFO - 12- {'Tarih': '01.01.2024', 'Firma Ýsmi': 'MAXIMUM', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '10999.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [10.01.2024]   17:06:33'}
-2024-05-03 20:47:08,936 - INFO - 13- {'Tarih': '01.01.2024', 'Firma Ýsmi': 'MAXIMUM', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '1099.57 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1554 \x1b[37m|\x1b[33m Garanti\x1b[37m  [12.01.2024]   21:25:26'}
-2024-05-03 20:47:08,964 - INFO - 14- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'MAXIMUM', 'Fatura Ýçeriði': 'fdsfsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddsfdsfsdkfmsdkfmsdkfmdskfm', 'Fatura Tutarý': '555.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [20.01.2024]   19:57:43'}
-2024-05-03 20:47:08,983 - INFO - 15- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'AK MEHMET', 'Fatura Ýçeriði': '10 koli yumurta 5 koli þeker', 'Fatura Tutarý': '1123.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 1124 \x1b[37m|\x1b[33m Maximum\x1b[37m  [01.02.2024]   20:24:18'}
-2024-05-03 20:47:09,009 - INFO - 16- {'Tarih': '15.12.2025', 'Firma Ýsmi': 'HEPSIBURADA', 'Fatura Ýçeriði': 'dddd', 'Fatura Tutarý': '1452.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 6645 \x1b[37m|\x1b[33m Maximum\x1b[37m  [28.02.2024]   10:08:17'}
-2024-05-03 20:47:09,015 - INFO - 17- {'Tarih': '12.11.2025', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': 'dijital key', 'Fatura Tutarý': '88657.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 2345 \x1b[37m|\x1b[33m Maximum\x1b[37m  [10.02.2024]   16:21:54'}
-2024-05-03 20:47:09,032 - INFO - 18- {'Tarih': '19.12.2021', 'Firma Ýsmi': 'MONSTER', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '28999.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 0751 \x1b[37m|\x1b[33m Maximum\x1b[37m  [06.02.2024]   11:33:37'}
-2024-05-03 20:47:09,040 - INFO - 19- {'Tarih': '12.12.2025', 'Firma Ýsmi': 'ASUS', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '88774.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 5598 \x1b[37m|\x1b[33m Maximum\x1b[37m  [15.02.2024]   15:05:52'}
-2024-05-03 20:47:09,045 - INFO - 20- {'Tarih': '18.12.2022', 'Firma Ýsmi': 'MONSTER', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '889.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 0751 \x1b[37m|\x1b[33m Maximum\x1b[37m  [16.02.2024]   21:15:18'}
-2024-05-03 20:47:09,069 - INFO - 21- {'Tarih': '04.04.2023', 'Firma Ýsmi': 'TRENDYOL', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '1234.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 6642 \x1b[37m|\x1b[33m Maximiles\x1b[37m  [07.02.2024]   10:16:27'}
-2024-05-03 20:47:09,074 - INFO - 22- {'Tarih': '02.02.2023', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '7789.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [15.02.2024]   14:55:54'}
-2024-05-03 20:47:09,079 - INFO - 23- {'Tarih': '05.05.5223', 'Firma Ýsmi': 'TRENDYOL', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '1288.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 7736 \x1b[37m|\x1b[33m Garanti\x1b[37m  [12.02.2024]   13:37:01'}
-2024-05-03 20:47:09,103 - INFO - 24- {'Tarih': '05.05.2024', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '11567.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 6552 \x1b[37m|\x1b[33m Maximum\x1b[37m  [03.03.2024]   10:08:19'}
-2024-05-03 20:47:09,111 - INFO - 25- {'Tarih': '01.01.1230', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '213.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 0751 \x1b[37m|\x1b[33m Maximum\x1b[37m  [12.03.2024]   21:54:46'}
-2024-05-03 20:47:09,128 - INFO - 26- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'N11', 'Fatura Ýçeriði': 'koli', 'Fatura Tutarý': '6673.0 Türk Lirasý', 'Durum': 'Durum: \x1b[33mÖdeme Bekliyor\x1b[37m'}
-2024-05-03 20:47:09,134 - INFO - 27- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': 'kol', 'Fatura Tutarý': '1157.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mKart\x1b[37m /\x1b[33m Sonu 7748 \x1b[37m|\x1b[33m Maximum\x1b[37m  [22.03.2024]   21:23:53'}
-2024-05-03 20:47:09,139 - INFO - 28- {'Tarih': '04.04.2023', 'Firma Ýsmi': 'AMAZON', 'Fatura Ýçeriði': '', 'Fatura Tutarý': '11567.0 Türk Lirasý', 'Durum': 'Durum: \x1b[32mÖdendi\x1b[37m ---------- \x1b[33mNakit\x1b[37m   [15.03.2024]   23:07:34'}
-2024-05-03 20:47:09,144 - INFO - 29- {'Tarih': '01.01.2023', 'Firma Ýsmi': 'AKBANK', 'Fatura Ýçeriði': 'fiþ', 'Fatura Tutarý': '77789887.0 Türk Lirasý', 'Durum': 'Durum: \x1b[33mÖdeme Bekliyor\x1b[37m'}
-2024-05-03 20:47:09,163 - INFO - Sorgu ekraný sunuldu. 
-2024-05-03 20:47:30,176 - INFO - Sorgu seçimi: 4
-2024-05-03 20:47:30,360 - INFO - Program sonlandýrýldý.
+2024-05-05 10:27:53,629 - INFO - ---------------------------------------------------------
+2024-05-05 10:27:53,630 - INFO - Program baþladý
+2024-05-05 10:27:53,641 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:27:54,495 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
+2024-05-05 10:27:54,495 - INFO - Kimlik dogruma iþlemine geçildi.
+2024-05-05 10:27:54,496 - INFO - Ana menü görüntülendi.
+2024-05-05 10:27:56,431 - INFO - Güncelleme bildirildi.
+2024-05-05 10:28:16,443 - INFO - ---------------------------------------------------------
+2024-05-05 10:28:16,444 - INFO - Program baþladý
+2024-05-05 10:28:16,455 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:28:17,040 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
+2024-05-05 10:28:17,041 - INFO - Kimlik dogruma iþlemine geçildi.
+2024-05-05 10:28:17,041 - INFO - Ana menü görüntülendi.
+2024-05-05 10:29:12,591 - INFO - ---------------------------------------------------------
+2024-05-05 10:29:12,591 - INFO - Program baþladý
+2024-05-05 10:29:12,602 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:29:12,797 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
+2024-05-05 10:29:12,797 - INFO - Kimlik dogruma iþlemine geçildi.
+2024-05-05 10:29:16,798 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:29:17,522 - INFO - Kullanýcý Giriþ Ekraný Secimi: 2
+2024-05-05 10:29:17,522 - INFO - Hesap oluþturma adýmýna geçildi.
+2024-05-05 10:29:17,522 - INFO - Hesap oluþturma alaný açýldý.
+2024-05-05 10:29:27,599 - INFO - Hesap oluþturuldu. | {kullanici_adi}  {hash_(sifre)}
+2024-05-05 10:29:32,447 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
+2024-05-05 10:29:32,448 - INFO - Kimlik dogruma iþlemine geçildi.
+2024-05-05 10:29:38,084 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
+2024-05-05 10:29:38,084 - INFO - Ana menü görüntülendi.
+2024-05-05 10:29:43,425 - INFO - Fatura kaydetme açýldý.
+2024-05-05 10:29:48,062 - INFO - Fatura kaydedildi. | 04.04.2023 | BATU | 5.0 | 
+2024-05-05 10:29:49,445 - INFO - Ana menü görüntülendi.
+2024-05-05 10:29:52,843 - INFO - Fatura kaydetme açýldý.
+2024-05-05 10:30:02,881 - INFO - Sistemde var olan faturalar gösterildi. TEYÝT ÝSTENDÝ.
+2024-05-05 10:30:05,689 - INFO - Kayýt iþlemi iptal edildi.
+2024-05-05 10:30:07,193 - INFO - Ana menü görüntülendi.
+2024-05-05 10:38:28,205 - INFO - ---------------------------------------------------------
+2024-05-05 10:38:28,206 - INFO - Program baþladý
+2024-05-05 10:38:28,220 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:38:53,171 - INFO - ---------------------------------------------------------
+2024-05-05 10:38:53,172 - INFO - Program baþladý
+2024-05-05 10:38:53,173 - INFO - Giriþ ekraný açýldý.
+2024-05-05 10:38:53,516 - INFO - Kullanýcý Giriþ Ekraný Secimi: 1
+2024-05-05 10:38:53,516 - INFO - Kimlik dogruma iþlemine geçildi.
+2024-05-05 10:38:59,207 - INFO - Giriþ baþarýlý.  | Kullanýcý Adý: admin
+2024-05-05 10:38:59,207 - INFO - Ana menü görüntülendi.
+2024-05-05 10:39:02,531 - INFO - Fatura kaydetme açýldý.
+2024-05-05 10:39:12,749 - INFO - Sistemde var olan fatura kayýt edilmek istendi. Ýstek REDDEDÝLDÝ.
+2024-05-05 10:39:16,753 - INFO - Ana menü görüntülendi.

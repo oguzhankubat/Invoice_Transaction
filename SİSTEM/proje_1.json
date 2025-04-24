@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "fatura_token": "BATU-04.04.2023-5.0-",
+    "fatura": {
+      "Tarih": "04.04.2023",
+      "Firma_ismi": "BATU",
+      "Fatura_icerik": "",
+      "Fatura_tutar": 5.0,
+      "Durum": "\u001b[33m\u00d6deme Bekliyor\u001b[37m"
+    }
+  }
+]

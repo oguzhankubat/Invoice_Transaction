@@ -5,17 +5,16 @@
                                                                  [33mGüncelleme Yapýldý.
 
 [37m
-    
-    
-                                     [33mBu Sürüm Ýle;[37m                                                           09.02.2024
-                                     
-    
-                                     [33m1-[37m Artýk Tüm Fatura iþlemleri Tek Çatý Altýnda Toplandý.
-                                     
-                                     [33m2-[37m Çeþitli hata ve sistemsel iyileþtirilmeler yapýldý.
-    
-                                     [33m3-[37m Teyit sýrasýnda hata yapýldýðýnda ayný fatura için tekrar deneme imkaný sunuldu.
-    
-                                     [33m4-[37m Sistemdeki Verilerin Anlýk Güncellenmesi Ýyileþtirildi.
-    
-                                     [33m5-[37m Fatura Bulma ve Silme Ýþlemlerinde Önemli Ýyileþtirmeler Yapýldý.
+
+
+                                    [33mBu Sürüm Ýle;[37m                                                           23.04.2024
+                                    
+
+                                    
+                                    [33m1-[37m Çeþitli hata ve sistemsel iyileþtirilmeler yapýldý.
+
+                                    [33m2-[37m Sistemdeki Verilerin Anlýk Güncellenmesi Ýyileþtirildi.
+
+                                    [33m3-[37m Fatura Bulma ve Silme Ýþlemlerinde Önemli Ýyileþtirmeler Yapýldý.
+                                    
+                                    [33m4-[37m Hýz konusunda ciddi iyileþtirilmeler yapýldý.

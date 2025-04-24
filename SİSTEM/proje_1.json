@@ -1,13 +1,79 @@
 [
   {
-    "id": 1,
-    "fatura_token": "BATU-04.04.2023-5.0-",
+    "id": "7b0e410b-0591-4718-aa20-87c48fd7994fb'\\x9b\\xa3\\xcc_'",
+    "fatura_token": "OGUZ-05.02.2023-6134.0-",
+    "fatura": {
+      "Tarih": "05.02.2023",
+      "Firma_ismi": "OGUZ",
+      "Fatura_icerik": "",
+      "Fatura_tutar": 6134.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKart\u001b[37m /\u001b[33m Sonu 4311 \u001b[37m|\u001b[33m Garanti\u001b[37m  [08.05.2024]   18:42:35"
+    }
+  },
+  {
+    "id": "97afc33e-cdab-4345-bab7-f018486f13adb'\\xf4i\\x9c\\xc5'",
+    "fatura_token": "BATU-04.04.2023-123.0-",
     "fatura": {
       "Tarih": "04.04.2023",
       "Firma_ismi": "BATU",
       "Fatura_icerik": "",
-      "Fatura_tutar": 5.0,
-      "Durum": "\u001b[33m\u00d6deme Bekliyor\u001b[37m"
+      "Fatura_tutar": 123.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mNakit\u001b[37m   [24.10.2024]   20:57:39"
+    }
+  },
+  {
+    "id": "81dcab75-bb66-449c-afb3-89e90f25e753b'\\x1e\\xc0\\x04\\xb9'",
+    "fatura_token": "OGUZ-04.04.2023-214.0-",
+    "fatura": {
+      "Tarih": "04.04.2023",
+      "Firma_ismi": "OGUZ",
+      "Fatura_icerik": "",
+      "Fatura_tutar": 214.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKart\u001b[37m /\u001b[33m Sonu 4125 \u001b[37m|\u001b[33m Maximum\u001b[37m  [26.06.2024]   17:26:03"
+    }
+  },
+  {
+    "id": "5319faa0-9319-4ebc-b580-0e1d26889660b\"\\x8f'\\xee4\"",
+    "fatura_token": "AMAZON-04.04.2023-6612.0-koli bant",
+    "fatura": {
+      "Tarih": "04.04.2023",
+      "Firma_ismi": "AMAZON",
+      "Fatura_icerik": "koli bant",
+      "Fatura_tutar": 6612.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKart\u001b[37m /\u001b[33m Sonu 9968 \u001b[37m|\u001b[33m Garanti\u001b[37m  [11.01.2025]   12:38:41"
+    }
+  },
+  {
+    "id": "41c4673c-a315-4352-8bf6-9d0b7caca17cb'\\t\\x88w\\xca'",
+    "fatura_token": "G\u0130B-03.03.2023-8825.0-vergi tutana\u011f\u0131",
+    "fatura": {
+      "Tarih": "03.03.2023",
+      "Firma_ismi": "G\u0130B",
+      "Fatura_icerik": "vergi tutana\u011f\u0131",
+      "Fatura_tutar": 8825.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKartuuu\u001b[37m /\u001b[33m Sonu 5436 \u001b[37m|\u001b[33m Garanti\u001b[37m  [04.09.2024]   18:41:31"
+    }
+  },
+  {
+    "id": "d142145a-4323-455a-ac6e-3ea94a80cde8b'\\xb9\\\\\\xa5\\xb9'",
+    "fatura_token": "BATU-05.05.2023-4554.0-",
+    "fatura": {
+      "Tarih": "05.05.2023",
+      "Firma_ismi": "BATU",
+      "Fatura_icerik": "",
+      "Fatura_tutar": 4554.0,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKart\u001b[37m /\u001b[33m Sonu 5513 \u001b[37m|\u001b[33m Garanti\u001b[37m  [02.11.2024]   15:24:47"
+    }
+  },
+  {
+    "id": "508160fe-7528-4f8d-81e1-83e1ade86c38b'\\xbd\\xaf\\x81\\xaf'",
+    "fatura_token": "AMAZON-11.11.2024-9968.45-paket",
+    "fatura": {
+      "Tarih": "11.11.2024",
+      "Firma_ismi": "AMAZON",
+      "Fatura_icerik": "paket",
+      "Fatura_tutar": 9968.45,
+      "Durum": " \u001b[32m\u00d6dendi\u001b[37m ---------- \u001b[33mKart\u001b[37m /\u001b[33m Sonu 9963 \u001b[37m|\u001b[33m Ziraat\u001b[37m  [29.01.2025]   21:28:23"
     }
   }
 ]

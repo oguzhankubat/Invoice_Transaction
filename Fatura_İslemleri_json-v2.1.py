@@ -10,21 +10,11 @@ import logging
 import json
 from collections import deque as dq
 import threading
-from SİSTEM.hashleme import hash_
+import uuid
 from cachetools import LRUCache 
+import hashlib
+import secrets
 
-logger = logging.getLogger(__name__)
-
-logger.setLevel(logging.DEBUG)
-
-file_handler = logging.FileHandler("SİSTEM\\program_log.txt")
-
-formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-file_handler.setFormatter(formatter)
-
-logger.addHandler(file_handler)
-logger.info("---------------------------------------------------------")
-logger.info("Program başladı")
 
 #Fore.BLACK, Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE,
 #Fore.MAGENTA, Fore.CYAN, Fore.WHITE      RENKLER
@@ -38,8 +28,25 @@ dosya_yolu_3=os.path.join(kok_dizin, "SİSTEM\\kullanici_bilgileri.txt")
 dosya_yolu_4=os.path.join(kok_dizin, "SİSTEM\\guncelleme_bildirim_kontrol.txt")
 dosya_yolu_5=os.path.join(kok_dizin, "SİSTEM\\hatalar.txt")
 klasor_adi = "SİSTEM"
-klasor_yolu = os.path.join(kok_dizin, klasor_adi)
 
+try:
+    os.makedirs(klasor_adi)
+except FileExistsError:
+    pass
+
+klasor_yolu = os.path.join(kok_dizin, klasor_adi)
+logger = logging.getLogger(__name__)
+
+logger.setLevel(logging.DEBUG)
+
+file_handler = logging.FileHandler("SİSTEM\\program_log.txt")
+
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
+logger.info("---------------------------------------------------------")
+logger.info("Program başladı")
 
 
 def dict_to_json(data, file_path):
@@ -54,10 +61,16 @@ def dict_to_json(data, file_path):
     with open(file_path, 'w') as json_file:
         json.dump(list(existing_data), json_file, indent=2)
         
+def hash_(data):
+    data = data.encode("utf-8")
+    hash_object = hashlib.sha256(data) 
+    return hash_object.hexdigest()
+
+
 global file_path
 file_path="SİSTEM\\proje_1.json"
 onbellege_alınmıs_veri=None
-onbellek=LRUCache(maxsize=10**3)
+onbellek=LRUCache(maxsize=1)
 class veri_onbellek:
     def __init__(self,file_path):
         self.file_path=file_path
@@ -91,23 +104,6 @@ class veri_onbellek:
         thread_1 = threading.Thread(target=self.onbellege_veri_cek)
         thread_1.start()
         thread_1.join()
-def id_ref_olustur():
-    if not os.path.exists("SİSTEM\\id_ref.json"):
-        with open("SİSTEM\\id_ref.json", 'w') as json_file:
-            dict_ = {"id": 0}
-            json.dump(dict_, json_file, indent=2)
-
-def id_ref_cekme():
-    id_ref_olustur()
-    with open("SİSTEM\\id_ref.json", "r") as file:
-        data = json.load(file)
-        data["id"] += 1
-
-    with open("SİSTEM\\id_ref.json", "w") as file:
-        json.dump(data, file, indent=2)
-        
-    return data["id"]
-
 
 
 def fatura_token_olustur(fatura_isim, fatura_tarihi, fatura_tutar, fatura_icerigi):
@@ -121,8 +117,10 @@ def fatura_kontrol_1(data,token):
 
 def dict_olustur(fatura_isim, fatura_tarihi,fatura_tutar, fatura_icerigi, durum):
     fatura_token = fatura_token_olustur(fatura_isim, fatura_tarihi,fatura_tutar,fatura_icerigi)
+    global id_
+    id_=str(uuid.uuid4()) + str(secrets.token_bytes(4))
     sozluk = {
-        "id": id_ref_cekme(),
+        "id": id_,
         "fatura_token": fatura_token,
         "fatura": {
             "Tarih": fatura_tarihi,
@@ -133,6 +131,7 @@ def dict_olustur(fatura_isim, fatura_tarihi,fatura_tutar, fatura_icerigi, durum)
         }
     }
     return sozluk
+
 def fatura_id_getir(data, id_no):
     for invoice in data:
         if invoice['id'] == id_no:
@@ -140,20 +139,19 @@ def fatura_id_getir(data, id_no):
     return None
     
 def fatura_olustur(fatura_isim, fatura_tarihi,fatura_tutar, fatura_icerigi, durum):
-    cache.onbellek_guncelle()
+    
     fatura_token = fatura_token_olustur(fatura_isim, fatura_tarihi,fatura_tutar,fatura_icerigi)
     global cached_data
-    data = cached_data
 
-    if fatura_kontrol_1(data,fatura_token):
+    if fatura_kontrol_1(cached_data,fatura_token):
         logger.info("Sistemde var olan fatura kayıt edilmek istendi. İstek REDDEDİLDİ.")
         print(f"\n\n\nSistemde Aynı Bilgilere Sahip {Fore.YELLOW}Fatura{Fore.WHITE} Mevcuttur. {Fore.YELLOW}Lütfen Bilgilerinizi Kontrol Ediniz.{Fore.WHITE}\n\n")
         tm.sleep(4)
         ana_menu()
         
     fatura_token_kontrol_id = []
-    
-    for i in data:
+
+    for i in cached_data:
         count=0
 
         for a, b in zip(i["fatura_token"], fatura_token):
@@ -180,7 +178,7 @@ def fatura_olustur(fatura_isim, fatura_tarihi,fatura_tutar, fatura_icerigi, duru
         if fatura_listesi:
             
             for index, id_no in enumerate(fatura_listesi, start=1):
-                invoice = fatura_id_getir(data, id_no)
+                invoice = fatura_id_getir(cached_data, id_no)
                 if invoice is not None:
                     
                     if invoice["fatura"]['Durum'].startswith(" [32mÖdendi"):
@@ -242,8 +240,7 @@ def maksimum_hesap_sayisi_belirle():
         clear_screen()
         if not os.path.exists(klasor_yolu):
             os.mkdir(klasor_yolu)
-        else:
-            pass
+            
         print(f"\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                    {Fore.YELLOW}***BİLGİLENDİRME***\n\n                                         {Fore.WHITE}Bu Aşama Bir Kez Belirlenecektir. {Fore.YELLOW}Yeniden Düzenleme Hakkınız Olmayacaktır.{Fore.WHITE}")
         maksimum_hesap_sayisi = input(f"\n\n\n                                                   Oluşturabilecek{Fore.YELLOW} Maksimum{Fore.WHITE} Hesap Sayısını Belirleyin: ")
 
@@ -329,7 +326,7 @@ def hesap_olustur():
         if sifre is not None and sifre_kontrol(sifre):
             with open(dosya_yolu_3, "a") as dosya:
                 dosya.write(f"{kullanici_adi} {hash_(sifre)}\n")
-                logger.info("Hesap oluşturuldu. | {kullanici_adi}  {hash_(sifre)}")
+                logger.info(f"Hesap oluşturuldu. | {kullanici_adi}  {hash_(sifre)}")
             print(f"\n\n                                                   Hesap {Fore.GREEN}BAŞARILI{Fore.WHITE} Bir Şekilde {Fore.YELLOW}Oluşturuldu.{Fore.WHITE}")
             tm.sleep(4)
         else:
@@ -538,7 +535,7 @@ def miktar_kontrol():
         max_amount = input(f"\n\nMaksimum Fatura Tutarı {Fore.YELLOW}(Varsayılan: 99,999,999,999,999,999.00){Fore.WHITE}: ")
                                 
         if min_amount and not min_amount.isdigit() or max_amount and not max_amount.isdigit():
-            print(f"\n                                                        {Fore.RED}GEÇERSİZ TUTAR FORMATI!!{Fore.YELLOW} Sadece sayısal değerleri GİREBİLİRSİNİZ.{Fore.WHITE}")
+            print(f"\n                                                       {Fore.RED}GEÇERSİZ TUTAR FORMATI!!{Fore.YELLOW} Sadece sayısal değerleri GİREBİLİRSİNİZ.{Fore.WHITE}")
             continue
                                 
         if min_amount:
@@ -552,7 +549,7 @@ def miktar_kontrol():
             max_amount = 99_999_999_999_999_999
                                 
         if min_amount >= max_amount:
-            print(f"\n\n                                                                 {Fore.YELLOW}Minimum tutar, Maksimum tutar'dan {Fore.RED}BÜYÜK ya da AYNI OLAMAZ!!{Fore.WHITE}")
+            print(f"\n\n                                                       {Fore.YELLOW}Minimum tutar, Maksimum tutar'dan {Fore.RED}BÜYÜK ya da AYNI OLAMAZ!!{Fore.WHITE}")
             continue
         logger.info(f"Tutar aralığı girildi. {min_amount} | {max_amount}")
         return (min_amount, max_amount, True)
@@ -563,14 +560,14 @@ def tarih_kontrol():
         end_date = input(f"\n\nBitiş Tarihi {Fore.YELLOW}(GG.MM.YYYY):{Fore.WHITE} ")
 
         if not is_valid_date(start_date) or not is_valid_date(end_date):
-            print(f"                                                                 {Fore.RED}GEÇERSİZ TARİH FORMATI!!{Fore.YELLOW} Lütfen GG.MM.YYYY formatında girin.{Fore.WHITE}")
+            print(f"                                                       {Fore.RED}GEÇERSİZ TARİH FORMATI!!{Fore.YELLOW} Lütfen GG.MM.YYYY formatında girin.{Fore.WHITE}")
             continue
 
         try:
             start_datetime = datetime.strptime(start_date, "%d.%m.%Y")
             end_datetime = datetime.strptime(end_date, "%d.%m.%Y")
         except ValueError:
-            print(f"                                                                 {Fore.RED}GEÇERSİZ TARİH FORMATI!!{Fore.YELLOW} Lütfen 31.12.9999 formatında girin.{Fore.WHITE}")
+            print(f"                                                       {Fore.RED}GEÇERSİZ TARİH FORMATI!!{Fore.YELLOW} Lütfen 31.12.9999 formatında girin.{Fore.WHITE}")
             continue
 
         if start_datetime >= end_datetime:
@@ -607,7 +604,7 @@ def ana_menu():
     global cached_data
     
     cached_data = cache.veri_cek()
-    
+
     
     print("\n\n\n\n\n\n\n\n\n\n                                                                   ---İşlem Seçenekleri---")
     print(f"\n\n                                                                     {Fore.YELLOW}1-{Fore.WHITE} Fatura Kaydetme")
@@ -714,7 +711,7 @@ def print_invoices(invoices, title, total, show_total=True):
 
             if "tek" in p:
                 print(f"\n\n\n{Fore.YELLOW}Lütfen Bekleyiniz...{Fore.WHITE}")
-                tm.sleep(2)
+                tm.sleep(1)
                 main()
             elif "menu" in p:
                 ana_menu()
@@ -764,7 +761,7 @@ def fatura_yok():
     a=input(f"\n\n\nProgramı kapatmak için {Fore.YELLOW}'Enter'{Fore.WHITE} basınız, Yeniden Arama için {Fore.YELLOW}'Tekrar'{Fore.WHITE} yazınız : ").lower()
     if a=="tekrar":
         print(f"\n\n\n{Fore.YELLOW}Lütfen BEKLEYİNİZ...{Fore.WHITE}")
-        tm.sleep(2)
+        tm.sleep(1)
         main()
     else:
         print("\n\nProgram 3 sn içinde kapanacaktır.")
@@ -781,17 +778,21 @@ def guncelleme_bildirme():
     a=f"""\n\n\n\n                                                                 {Fore.YELLOW}Güncelleme Yapıldı.\n\n{Fore.WHITE}
 
 
-                                    {Fore.YELLOW}Bu Sürüm İle;{Fore.WHITE}                                                           23.04.2024
+                                    {Fore.YELLOW}Bu Sürüm İle;{Fore.WHITE}                                                           3.05.2024
                                     
 
                                     
-                                    {Fore.YELLOW}1-{Fore.WHITE} Çeşitli hata ve sistemsel iyileştirilmeler yapıldı.
+                                    {Fore.YELLOW}1-{Fore.WHITE} SİSTEM klasörünün oluşturulması otomatikleştirildi.
 
-                                    {Fore.YELLOW}2-{Fore.WHITE} Sistemdeki Verilerin Anlık Güncellenmesi İyileştirildi.
+                                    {Fore.YELLOW}2-{Fore.WHITE} ID numaraları artık 128 bit halinde daha güvenli oluşturulacak.
 
-                                    {Fore.YELLOW}3-{Fore.WHITE} Fatura Bulma ve Silme İşlemlerinde Önemli İyileştirmeler Yapıldı.
+                                    {Fore.YELLOW}3-{Fore.WHITE} Önbellekleme teknolojisi tekrar class olarak yazıldı.
                                     
-                                    {Fore.YELLOW}4-{Fore.WHITE} Hız konusunda ciddi iyileştirilmeler yapıldı."""
+                                    {Fore.YELLOW}4-{Fore.WHITE} Hız konusunda ciddi iyileştirilmeler yapıldı.
+                                    
+                                    {Fore.YELLOW}5-{Fore.WHITE} Giriş ekranında hashleme ile daha güvenli veri sorgusu yapılması sağlandı.
+
+                                    {Fore.YELLOW}6-{Fore.WHITE} Loglama adımları güncellendi."""
     
     if sayac!=a:
         logger.info("Güncelleme bildirildi.")
@@ -1103,8 +1104,6 @@ def main_fatura_kaydetme():
 {Fore.YELLOW}*{Fore.WHITE}Kayıt esnasında hatalı bir yazım yapıldıysa program sonuna gelmeden programı kapatın.
 
 \n{Fore.YELLOW}-Oguzhan KUBAT{Fore.WHITE} tarafından oluşturulmuştur. Bilgisi dışında kullanımı yasaktır.     """)
-
-    fatura_listesi=dq()
     firma_ismi = input(f"\n\n{Fore.YELLOW}Firma İsmi: {Fore.WHITE}").upper()
     tarih = input(f"\n{Fore.YELLOW}Fatura Tarihi giriniz (gg.aa.yyyy):{Fore.WHITE} ")
     try:
@@ -1135,8 +1134,8 @@ def main_fatura_kaydetme():
         case "evet":
             yeni_fatura = fatura_olustur(firma_ismi, tarih, tutar,icerik,durum=f"{Fore.YELLOW}Ödeme Bekliyor{Fore.WHITE}")
             if yeni_fatura:
+                logger.info(f"Fatura kayıt onaylandı. id: {id_} | {firma_ismi} | {tarih} | {tutar} | {icerik} ")
                 dict_to_json(yeni_fatura, "SİSTEM\\proje_1.json")
-                logger.info(f"Fatura kaydedildi. | {tarih} | {firma_ismi} | {tutar} | {icerik}")
                 
         case _:
             print("\n\n\nKayıt işlemi İptal Edilmiştir.")
@@ -1156,15 +1155,24 @@ Kayıt işlemi {Fore.GREEN}BAŞARILI{Fore.WHITE} bir şekilde {Fore.YELLOW}TAMAM
         case "menu":
             cache.onbellek_guncelle()
             ana_menu()
+            
+        case "tekrar":
+            cache.onbellek_guncelle()
+            yukleniyor_cubugu_3()
+            clear_screen()
+            logger.info("Fatura kayıt tekrar istendi.")
+            main_fatura_kaydetme()
+            logger.info(f"Fatura kaydedildi. | {tarih} | {firma_ismi} | {tutar} | {icerik}")
+            
         case _:
             logger.info("Programdan çıkıldı.")
             sys.exit()
 def tekrar_sorgu_silme_islemi_2(soru):
     match soru:
         case "menu":
+            cache.onbellek_guncelle()
             ana_menu()
         case "tekrar":
-            
             cache.onbellek_guncelle()
             yukleniyor_cubugu_3()
             clear_screen()
@@ -1183,6 +1191,7 @@ def tekrar_sorgu_silme_islemi(soru):
             ana_program_silme()
         case "menu":
             ana_menu()
+            
         case _:
             print("\n\nProgram sonlandırıldı.")
             tm.sleep(2)
@@ -1197,7 +1206,7 @@ def ana_program_silme():
         
     except FileNotFoundError:
         print(f"\n\n\n{Fore.RED}HATA: {Fore.WHITE}Fatura Listesi dosyası bulunamadı. Bilgilendirme için {Fore.YELLOW}LÜTFEN BEKLEYİNİZ...{Fore.WHITE}")
-        tm.sleep(5)
+        tm.sleep(3)
 
     if fatura_listesi:
         clear_screen()
@@ -1385,7 +1394,7 @@ def main():
             
         except FileNotFoundError:
             print(f"\n\n{Fore.RED}HATA: {Fore.WHITE}Fatura Listesi dosyası bulunamadı. Bilgilendirme için {Fore.YELLOW}LÜTFEN BEKLEYİNİZ...{Fore.WHITE}")
-            tm.sleep(6)
+            tm.sleep(3)
 
         if dq(invoice_list):
             clear_screen()
@@ -1410,7 +1419,7 @@ def main():
                 print(f"\n\n\n{Fore.YELLOW}'{target_name}'{Fore.WHITE} Adlı Firmaya ait Fatura BULUNAMADI!!")
                 tm.sleep(3)
                 bosluk()
-                yukleniyor_cubugu(3)
+                yukleniyor_cubugu(2)
                 clear_screen()
                 continue
             else:

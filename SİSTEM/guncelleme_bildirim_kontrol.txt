@@ -7,14 +7,18 @@
 [37m
 
 
-                                    [33mBu Sürüm Ýle;[37m                                                           23.04.2024
+                                    [33mBu Sürüm Ýle;[37m                                                           3.05.2024
                                     
 
                                     
-                                    [33m1-[37m Çeþitli hata ve sistemsel iyileþtirilmeler yapýldý.
+                                    [33m1-[37m SÝSTEM klasörünün oluþturulmasý otomatikleþtirildi.
 
-                                    [33m2-[37m Sistemdeki Verilerin Anlýk Güncellenmesi Ýyileþtirildi.
+                                    [33m2-[37m ID numaralarý artýk 128 bit halinde daha güvenli oluþturulacak.
 
-                                    [33m3-[37m Fatura Bulma ve Silme Ýþlemlerinde Önemli Ýyileþtirmeler Yapýldý.
+                                    [33m3-[37m Önbellekleme teknolojisi tekrar class olarak yazýldý.
                                     
                                     [33m4-[37m Hýz konusunda ciddi iyileþtirilmeler yapýldý.
+                                    
+                                    [33m5-[37m Giriþ ekranýnda hashleme ile daha güvenli veri sorgusu yapýlmasý saðlandý.
+
+                                    [33m6-[37m Loglama adýmlarý güncellendi.
